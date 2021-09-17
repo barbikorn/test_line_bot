@@ -48,6 +48,7 @@ def push_noti():
         to_user_id,
         TextSendMessage('Test Ja')
     )
+    return 'Done.'
 
 
 if __name__ == "__main__":
