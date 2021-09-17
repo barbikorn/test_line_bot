@@ -42,7 +42,7 @@ def handle_message(event):
         event.reply_token,
         TextSendMessage(text='%s: %s' % (event.source.user_id , event.message.text)))
 
-@app.route("/push", methods=['POST'])
+@app.route("/push", methods=['GET'])
 def push_noti():
     line_bot_api.push_message(
         to_user_id,
